@@ -19,7 +19,7 @@ async function loadBooks() {
   try {
     let response = await fetch(`${localhost}/api/books/fetchBooks`);
     if (!response.ok) {
-      cardContainer.innerHTML = "Could not load the rooms";
+      cardContainer.innerHTML = "Could not load the books";
     } else {
       const data = await response.json();
 
